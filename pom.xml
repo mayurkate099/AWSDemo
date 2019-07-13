@@ -128,6 +128,5 @@
             <name>bintray-plugins</name>
             <url>http://jcenter.bintray.com</url>
         </pluginRepository>
-    </pluginRepositories>
-  
+    </pluginRepositories>  
 </project>
