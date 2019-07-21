@@ -3,7 +3,7 @@ pipeline {
      stages {
           stage("Compile") {
                steps {
-                    gradle build
+                    buildInfo = rtGradle.run  buildFile: 'build.gradle', tasks: 'clean artifactoryPublish'
                }
           }
           stage("Unit test") {
