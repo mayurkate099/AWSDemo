@@ -4,9 +4,8 @@ pipeline {
      agent any
      stages {
           stage('Gradle build') {
-               steps {
                     buildInfo = rtGradle.run  buildFile: 'build.gradle', tasks: 'clean artifactoryPublish'
-               }
+           
           }
           stage("Unit test") {
                steps {
@@ -15,11 +14,7 @@ pipeline {
           }
      
     
-stage("Package") {
-     steps {
-          sh "./gradlew build"
-     }
-}
+
 stage("Docker build") {
      steps {
       
