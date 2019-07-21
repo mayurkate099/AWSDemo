@@ -1,3 +1,5 @@
+def rtGradle = Artifactory.newGradleBuild()
+def buildInfo
 pipeline {
      agent any
      stages {
