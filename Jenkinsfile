@@ -3,7 +3,7 @@ def buildInfo
 pipeline {
      agent any
      stages {
-          stage("Compile") {
+          stage('Gradle build') {
                steps {
                     buildInfo = rtGradle.run  buildFile: 'build.gradle', tasks: 'clean artifactoryPublish'
                }
