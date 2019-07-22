@@ -3,7 +3,7 @@ agent any
 stages {
 stage(“Checkout”) {
 steps {
-git url: ‘https://github.com/mayurkate099/AWSDemo.git’
+git url: https://github.com/mayurkate099/AWSDemo.git
 }
 }
 stage(“Compile”) {
