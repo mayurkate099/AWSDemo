@@ -18,4 +18,3 @@ sh “./gradlew test”
 }
 }
 }
-
